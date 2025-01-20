@@ -1,7 +1,8 @@
-"use client"
+"use client";  // This must be the first line
 
 import React, { useState } from 'react';
 import { Beaker, ThermometerSun, Timer, AlertCircle } from 'lucide-react';
+// rest of the code
 
 const VirtualLabExperiment = () => {
   const [temperature, setTemperature] = useState(25);

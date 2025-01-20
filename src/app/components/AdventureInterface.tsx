@@ -1,7 +1,8 @@
-"use client"
+"use client";  // This must be the first line
 
 import React, { useState } from 'react';
 import { Book, Beaker, Search, MessageCircle, Star } from 'lucide-react';
+// rest of the code
 
 const AdventureInterface = () => {
   const [score, setScore] = useState(150);
