@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import { Book, Beaker, Search, MessageCircle, Star } from 'lucide-react';
 

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { MapPin, Star, Book, Beaker, Award } from 'lucide-react';
 

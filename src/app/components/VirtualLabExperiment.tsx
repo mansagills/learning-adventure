@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import { Beaker, ThermometerSun, Timer, AlertCircle } from 'lucide-react';
 
