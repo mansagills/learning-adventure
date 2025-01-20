@@ -1,12 +1,12 @@
-"use client";  // This must be the first line
+"use client";
 
-import React, { useState } from 'react';
-import { Book, Beaker, Search, MessageCircle, Star } from 'lucide-react';
-// rest of the code
+import React from 'react';
+import { Book, Beaker, Search, Star } from 'lucide-react';
+import Image from 'next/image';
 
 const AdventureInterface = () => {
-  const [score, setScore] = useState(150);
-  const [badges, setBadges] = useState(['Scientist', 'Explorer']);
+  const [score] = React.useState(150); // Removed unused setScore
+  const [badges] = React.useState(['Scientist', 'Explorer']); // Removed unused setBadges
   
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-purple-50 p-6">
@@ -32,20 +32,22 @@ const AdventureInterface = () => {
         {/* Character Dialog */}
         <div className="col-span-2 bg-white p-6 rounded-lg shadow-md">
           <div className="flex items-start space-x-4">
-            <img
+            <Image
               src="/api/placeholder/120/120"
               alt="George Washington Carver"
+              width={120}
+              height={120}
               className="rounded-full"
             />
             <div className="flex-1">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Dr. George Washington Carver</h3>
               <p className="text-gray-600 mb-4">
-                "Welcome young scientist! I need your help finding my missing formula 
-                for peanut-based plastic. Can you help me solve this mystery?"
+                &quot;Welcome young scientist! I need your help finding my missing formula 
+                for peanut-based plastic. Can you help me solve this mystery?&quot;
               </p>
               <div className="flex space-x-4">
                 <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
-                  Let's begin!
+                  Let&apos;s begin!
                 </button>
                 <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-200">
                   Learn more about me

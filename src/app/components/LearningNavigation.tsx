@@ -19,7 +19,7 @@ const LearningNavigation = () => {
       </h1>
       
       <div className="flex justify-between items-center">
-        {stages.map((stage, index) => (
+        {stages.map((stage) => (
           <div key={stage.name} className="flex flex-col items-center w-32">
             <div className={`h-16 w-16 rounded-full flex items-center justify-center ${
               stage.complete ? 'bg-green-500' : 'bg-gray-200'
